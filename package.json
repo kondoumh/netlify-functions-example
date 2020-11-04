@@ -1,0 +1,18 @@
+{
+  "name": "netlify-functions-example",
+  "version": "0.0.1",
+  "description": "Netlify functions example project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kondoumh/netlify-functions-example"
+  },
+  "author": "kondoumh",
+  "license": "MIT",
+  "dependencies": {
+    "netlify-lambda": "^2.0.1"
+  }
+}
