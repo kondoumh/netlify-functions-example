@@ -4,7 +4,8 @@
   "description": "Netlify functions example project",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "dev": "etlify-lambda serve resources/api",
+    "build": "netlify-lambda build resources/api"
   },
   "repository": {
     "type": "git",
