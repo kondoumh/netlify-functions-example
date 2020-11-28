@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "netlify-lambda serve resources/api",
+    "prebuild" : "cd resources/api && npm i",
     "build": "netlify-lambda build resources/api"
   },
   "repository": {
