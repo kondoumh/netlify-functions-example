@@ -3,6 +3,9 @@ exports.handler = async (e, c) => {
   if (!project) {
     return {
       statusCode: 400,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify({error: "Project name is required!"}),
     };
   }
@@ -20,12 +23,18 @@ exports.handler = async (e, c) => {
   if (res.status !== 200) {
     return {
       statusCode: res.status,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify(data),
     }
   }
   console.log(data.projectName + " : " + data.count);
   return {
     statusCode: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
     body: JSON.stringify(data),
   };
 };
