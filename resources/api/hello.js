@@ -5,7 +5,7 @@ exports.handler = async (e, c) => {
   const url = "https://scrapbox.io/api/pages/kondoumh?limit=10";
   const res = await fetch(url);
   const data = await res.json();
-  console.log(data);
+  console.log(data.projectName + " : " + data.count);
   return {
     statusCode: 200,
     body: JSON.stringify(data),
