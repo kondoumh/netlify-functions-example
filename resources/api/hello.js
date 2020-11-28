@@ -3,6 +3,7 @@ exports.handler = async (e, c) => {
   const header = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Methods": "GET, POST",
     "content-type": "application/json; charset=utf-8",
   };
 
