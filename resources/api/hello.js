@@ -1,8 +1,10 @@
 exports.handler = async (e, c) => {
 
+  console.log(c)
+
   const header = {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Expose-Headers": "*",
+    "Access-Control-Allow-Headers": "*",
     "Access-Control-Allow-Methods": "*"
   };
 
