@@ -1,18 +1,9 @@
-exports.handler = async (e, c) => {
-
-  console.log(c)
-
-  const header = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-    "Access-Control-Allow-Methods": "*"
-  };
+exports.handler = async (e) => {
 
   const project = e.headers.project
   if (!project) {
     return {
       statusCode: 400,
-      headers: header,
       body: JSON.stringify({error: "Project name is required!"}),
     };
   }
@@ -30,14 +21,13 @@ exports.handler = async (e, c) => {
   if (res.status !== 200) {
     return {
       statusCode: res.status,
-      headers: header,
       body: JSON.stringify(data),
     }
   }
+  data.timestamp = Date.now()
   console.log(data.projectName + " : " + data.count);
   return {
     statusCode: 200,
-    headers: header,
     body: JSON.stringify(data),
   };
 };
