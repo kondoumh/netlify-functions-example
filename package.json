@@ -4,10 +4,7 @@
   "description": "Netlify functions example project",
   "scripts": {
     "dev": "netlify-lambda serve resources/api",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && netlify-lambda build resources/api",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "build": "netlify-lambda build resources/api"
   },
   "repository": {
     "type": "git",
@@ -16,40 +13,7 @@
   "author": "kondoumh",
   "license": "MIT",
   "dependencies": {
-    "encoding": "^0.1.13",
-    "netlify-lambda": "^2.0.1",
-    "node-fetch": "^2.6.1",
-    "core-js": "^3.6.5",
-    "node-sass": "^5.0.0",
-    "register-service-worker": "^1.7.1",
-    "sass": "^1.29.0",
-    "sass-loader": "^10.1.0",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuetify": "^2.3.17"
+    "netlify-lambda": "^2.0.1"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-pwa": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "lint-staged": "^9.5.0",
-    "vue-cli-plugin-vuetify": "^2.0.7",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.6.0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
+  "devDependencies": {}
 }
