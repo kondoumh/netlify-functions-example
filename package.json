@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Netlify functions example project",
   "scripts": {
-    "build": "netlify-lambda build netlify/functions"
+    "dev": "netlify-lambda serve netlify/functions",
+    "build": "echo build"
   },
   "repository": {
     "type": "git",
