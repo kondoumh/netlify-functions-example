@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Netlify functions example project",
   "scripts": {
-    "dev": "netlify-lambda serve netlify/functions",
     "build": "echo build"
   },
   "repository": {
@@ -12,8 +11,6 @@
   },
   "author": "kondoumh",
   "license": "MIT",
-  "dependencies": {
-    "netlify-lambda": "^2.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
