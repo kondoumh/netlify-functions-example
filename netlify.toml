@@ -1,3 +1,7 @@
 [[edge_functions]]
   function = "hello-edge"
   path = "/edge"
+
+[[edge_functions]]
+  function = "date-now"
+  path = "/date-now"
