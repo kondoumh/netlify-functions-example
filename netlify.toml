@@ -5,3 +5,11 @@
 [[edge_functions]]
   function = "date-now"
   path = "/date-now"
+
+[[edge_functions]]
+  function = "use-context"
+  path = "/context"
+
+[[edge_functions]]
+  function = "hello-edge"
+  path = "/context"
